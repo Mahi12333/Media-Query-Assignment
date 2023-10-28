@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="#">
+  <style>
+    /* Base styles */
+.image-gallery {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  
+}
+
+.image-gallery img {
+    width: 30%; /* Initially, show three images in a row */
+    margin-bottom: 20px;
+}
+
+/* Media query for screens smaller than 800px */
+@media (max-width: 800px) {
+    .image-gallery img {
+        width: 48%; /* Show two images in a row */
+    }
+}
+
+/* Media query for screens smaller than 500px */
+@media (max-width: 500px) {
+    .image-gallery img {
+        width: 100%; /* Show one image in a row */
+    }
+}
+
+  </style>
+</head>
+<body>
+    <div class="image-gallery">
+        <img src="./asset/task_2.jpg" alt="Image 1">
+        <img src="./asset//task_2.jpg" alt="Image 2">
+        <img src="asset/task_2.jpg" alt="Image 3">
+    </div>
+</body>
+</html>
