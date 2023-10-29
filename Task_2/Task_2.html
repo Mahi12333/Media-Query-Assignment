@@ -9,7 +9,7 @@
     /* Base styles */
 .image-gallery {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
   
 }
@@ -24,12 +24,18 @@
     .image-gallery img {
         width: 48%; /* Show two images in a row */
     }
+    .image-gallery {
+         justify-content: left;
+    }
 }
 
 /* Media query for screens smaller than 500px */
 @media (max-width: 500px) {
     .image-gallery img {
         width: 100%; /* Show one image in a row */
+    }
+     .image-gallery {
+         justify-content: left;
     }
 }
 
